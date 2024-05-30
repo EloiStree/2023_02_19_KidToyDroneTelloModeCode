@@ -221,6 +221,17 @@ public partial class @XRToDroneRCInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""57a0ca35-4390-475b-8487-766c6d72d0da"",
+                    ""path"": ""<Gamepad>/rightStick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRigthRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""3b343553-177b-41d4-9333-2361c9552a61"",
                     ""path"": ""<OculusTouchController>{RightHand}/thumbstick/y"",
                     ""interactions"": """",
@@ -234,6 +245,17 @@ public partial class @XRToDroneRCInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""5279c23d-f9c9-4d9b-b210-85c39f8d9301"",
                     ""path"": ""<WMRSpatialController>{RightHand}/joystick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BackFront"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5dba2daf-9265-4dc2-b7d9-775473ad511f"",
+                    ""path"": ""<Gamepad>/rightStick/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -265,6 +287,17 @@ public partial class @XRToDroneRCInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""6ee6e3ab-c98e-4728-b3a8-59cbb03063c4"",
+                    ""path"": ""<Gamepad>/leftStick/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DownUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""732472b8-3b85-449b-bf7f-acab51fd3c54"",
                     ""path"": ""<OculusTouchController>{RightHand}/thumbstick/x"",
                     ""interactions"": """",
@@ -278,6 +311,17 @@ public partial class @XRToDroneRCInput: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""36d71dc2-161e-46b9-b840-6851d87a1c5b"",
                     ""path"": ""<WMRSpatialController>{RightHand}/joystick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LeftRight"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73c86fbc-7e5d-40e7-a353-98a3e2aadf3a"",
+                    ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

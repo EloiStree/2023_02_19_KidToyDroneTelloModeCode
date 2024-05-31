@@ -9,6 +9,7 @@ public class LocalDroneXRToServerLocalInputMono : MonoBehaviour
     public float m_leftRight;
     public float m_backFront;
     public float m_downUp;
+
     public float m_leftRightRotation;
     [Range(0, 1)]
     public float m_leftRightPercent = 1;

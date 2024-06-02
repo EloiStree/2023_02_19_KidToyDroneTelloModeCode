@@ -5,13 +5,11 @@ using UnityEngine;
 public class RotateLocalyWithRCMono : MonoBehaviour
 {
 
-    public Transform m_toRotate;
     public Transform m_origineToRotate;
+    public Transform m_fakeTiltToRotate;
 
     public float m_maxAnglePitchBackFront=15f;
     public float m_maxAngleRollLefRight=15f;
-
-
 
     public float m_rollUserLerped;
     public float m_pitchUserLerped;
@@ -37,7 +35,7 @@ public class RotateLocalyWithRCMono : MonoBehaviour
         m_rollUserLerped = Mathf.Lerp(m_rollUserLerped, m_rollUser, Time.deltaTime* m_lerpValue);
         m_pitchUserLerped = Mathf.Lerp(m_pitchUserLerped, m_pitchUser, Time.deltaTime* m_lerpValue);
 
-        m_toRotate .rotation = m_origineToRotate.rotation * Quaternion.Euler(m_pitchUserLerped * m_maxAnglePitchBackFront, 0, -m_rollUserLerped * m_maxAngleRollLefRight);
+        m_fakeTiltToRotate .rotation = m_origineToRotate.rotation * Quaternion.Euler(m_pitchUserLerped * m_maxAnglePitchBackFront, 0, -m_rollUserLerped * m_maxAngleRollLefRight);
 
     }
 }

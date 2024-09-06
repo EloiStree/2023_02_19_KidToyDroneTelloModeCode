@@ -65,7 +65,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!135 &8751598426442164393
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1256,8 +1256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2697d5d0f854bf1429a1ca5917ecd74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fakeTiltToRotate: {fileID: 4834138597267130539}
   m_origineToRotate: {fileID: 2254404873469348531}
+  m_fakeTiltToRotate: {fileID: 4834138597267130539}
   m_maxAnglePitchBackFront: 45
   m_maxAngleRollLefRight: 45
   m_rollUserLerped: 0

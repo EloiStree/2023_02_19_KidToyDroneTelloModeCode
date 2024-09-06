@@ -1,10 +1,12 @@
 
 {                                                                   
-            "name": "be.eloistree.rootsofknowledgedronecar",          
-    "references": [
+            "name": "be.elab.rootsofknowledgedronecarEditor",          
+    "references": ["be.elab.rootsofknowledgedronecar","be.elab.intcmdcardronerc","be.elab.indexintcmd","be.elab.intcmd"
 ],                                                              
     "optionalUnityReferences": [],                                  
-    "includePlatforms": [],                                                  
+    "includePlatforms": [                                           
+        "Editor"                                                    
+    ],                                                              
     "excludePlatforms": [],                                         
     "allowUnsafeCode": false,                                       
     "overrideReferences": false,                                    

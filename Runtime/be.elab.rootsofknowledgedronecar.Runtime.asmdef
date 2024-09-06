@@ -1,5 +1,5 @@
 {
-    "name": "be.eloistree.rootsofknowledgedronecar",
+    "name": "be.elab.rootsofknowledgedronecar",
     "rootNamespace": "",
     "references": [
         "Unity.InputSystem"

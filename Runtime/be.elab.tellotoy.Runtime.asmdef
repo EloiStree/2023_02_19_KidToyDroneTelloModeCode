@@ -1,5 +1,5 @@
 {
-    "name": "be.elab.rootsofknowledgedronecar",
+    "name": "be.elab.tellotoy",
     "rootNamespace": "",
     "references": [
         "Unity.InputSystem"

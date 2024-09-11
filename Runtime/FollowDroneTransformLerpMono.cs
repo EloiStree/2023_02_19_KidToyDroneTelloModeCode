@@ -23,8 +23,8 @@ public class FollowDroneTransformLerpMono : MonoBehaviour
     {
         if (m_target != null && m_whatToMove != null)
         {
-            m_whatToMove.position = Vector3.Lerp(m_whatToMove.position, m_target.position, m_lerpSpeedMove);
-            m_whatToMove.rotation = Quaternion.Lerp(m_whatToMove.rotation, m_target.rotation, m_lerpSpeedRotate);
+            m_whatToMove.position = Vector3.Lerp(m_whatToMove.position, m_target.position, m_lerpSpeedMove * Time.deltaTime);
+            m_whatToMove.rotation = Quaternion.Lerp(m_whatToMove.rotation, m_target.rotation, m_lerpSpeedRotate * Time.deltaTime);
         }
     }
 }

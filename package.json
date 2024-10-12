@@ -1,11 +1,11 @@
 
 {                                                                                
-  "name": "be.eloistree.rootsofknowledgedronecar",                              
-  "displayName": "Roots of Knowledge Drone and Car",                        
+  "name": "be.elab.tellotoy",                              
+  "displayName": "Tello flying drone",                        
   "version": "0.0.1",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
-  "description": "Turn integer command to remote control input for a drone and a car",                         
+  "description": "Allow to drop a tello drone in your game and fly it.",                         
   "keywords": ["Script","Tool"],                       
   "dependencies":{},     
   "relatedPackages":{},     
@@ -16,7 +16,7 @@
 "url":""},     
   "repository":{
 "type":"Git",
-"url":"git@github.com-dronexr:DroneXR/2023_02_19_RootsOfKnowedgeDrone.git",
+"url":"",
 "footprint":"",
 "revision":""},     
   "category": "Script"                   

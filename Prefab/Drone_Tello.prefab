@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2254404873469348531}
   - component: {fileID: 8313279293050696634}
   - component: {fileID: 8751598426442164393}
+  - component: {fileID: 5600991930829896021}
   m_Layer: 0
   m_Name: Drone_Tello
   m_TagString: Player
@@ -87,6 +88,107 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5600991930829896021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979569040918999747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e444960233e47e14498a796085ef4fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rotateLeftRightValue: 0
+  m_frontalMoveValue: 0
+  m_verticalMoveValue: 0
+  m_horizontalMoveValue: 0
+  m_onFrontalMove:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6104087691197125818}
+        m_TargetAssemblyTypeName: RCEasyMoveControllerLerpMono, be.elab.tellotoy
+        m_MethodName: SetFrontalMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5551862705783934336}
+        m_TargetAssemblyTypeName: RotateLocalyWithRCMono, be.elab.tellotoy
+        m_MethodName: SetPitchRC
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onVerticalMove:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6104087691197125818}
+        m_TargetAssemblyTypeName: RCEasyMoveControllerLerpMono, be.elab.tellotoy
+        m_MethodName: SetVerticalMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onHorizontalMove:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6104087691197125818}
+        m_TargetAssemblyTypeName: RCEasyMoveControllerLerpMono, be.elab.tellotoy
+        m_MethodName: SetHorizontaMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5551862705783934336}
+        m_TargetAssemblyTypeName: RotateLocalyWithRCMono, be.elab.tellotoy
+        m_MethodName: SetRollRC
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onLeftRightRotate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6104087691197125818}
+        m_TargetAssemblyTypeName: RCEasyMoveControllerLerpMono, be.elab.tellotoy
+        m_MethodName: SetHorizontalRotation
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_useUpdate: 1
 --- !u!1 &2120748008706571570
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +232,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fc50c0f4ed740fd438042d703bef0c5b, type: 3}
+  m_Resource: {fileID: 8300000, guid: fc50c0f4ed740fd438042d703bef0c5b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.19
   m_Pitch: 1.0000254
@@ -379,6 +482,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -528,6 +634,9 @@ TrailRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -699,6 +808,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: da8cba425f89d414bbfefcafcff846bd, type: 3}
+  m_Resource: {fileID: 8300000, guid: da8cba425f89d414bbfefcafcff846bd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.19
   m_Pitch: 1.0000254
@@ -802,7 +912,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2589850186101746565}
-  - component: {fileID: 323384191437423275}
   - component: {fileID: 6104087691197125818}
   m_Layer: 0
   m_Name: FPV Tello
@@ -826,110 +935,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2254404873469348531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &323384191437423275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8729700122418711605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e779c5b2ed97405429167ea1458ac830, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_leftRight: 0
-  m_backFront: 0
-  m_downUp: 0
-  m_leftRightRotation: 0
-  m_leftRightPercent: 1
-  m_backFrontPercent: 1
-  m_downUpPercent: 1
-  m_leftRightRotationPercent: 1
-  m_leftRightEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6104087691197125818}
-        m_TargetAssemblyTypeName: RCEasyMoveControllerMono, Assembly-CSharp
-        m_MethodName: SetHorizontaMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5551862705783934336}
-        m_TargetAssemblyTypeName: RotateLocalyWithRCMono, Assembly-CSharp
-        m_MethodName: SetRollRC
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_backFrontEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6104087691197125818}
-        m_TargetAssemblyTypeName: RCEasyMoveControllerMono, Assembly-CSharp
-        m_MethodName: SetFrontalMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5551862705783934336}
-        m_TargetAssemblyTypeName: RotateLocalyWithRCMono, Assembly-CSharp
-        m_MethodName: SetPitchRC
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_downUpEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6104087691197125818}
-        m_TargetAssemblyTypeName: RCEasyMoveControllerMono, Assembly-CSharp
-        m_MethodName: SetVerticalMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_leftRightRotationEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6104087691197125818}
-        m_TargetAssemblyTypeName: RCEasyMoveControllerMono, Assembly-CSharp
-        m_MethodName: SetHorizontalRotation
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &6104087691197125818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,9 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_distanceInMeterPerSeconds: {x: 3, y: 1.5, z: 3}
-  m_speedPerDirectionPercent: {x: 1, y: 1, z: 1}
   m_horizontalAnglePerSeconds: 160
-  m_rotationSpeedPercent: 1
   m_rootOfCurrentObject: {fileID: 2254404873469348531}
   m_directionUser: {x: 0, y: 0, z: 0}
   m_directionUserPrevious: {x: 0, y: 0, z: 0}
@@ -995,7 +998,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 83ff4f2513203584b800a22bc5caf79e, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 83ff4f2513203584b800a22bc5caf79e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.19
   m_Pitch: 1.0000254
@@ -1203,6 +1207,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8602121659784983005, guid: deecf510bccc12e40b5b70e46a828420,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.30173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602121659784983005, guid: deecf510bccc12e40b5b70e46a828420,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.30173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602121659784983005, guid: deecf510bccc12e40b5b70e46a828420,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.30173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602121659784983005, guid: deecf510bccc12e40b5b70e46a828420,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602121659784983005, guid: deecf510bccc12e40b5b70e46a828420,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0097
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3188265959457166302, guid: deecf510bccc12e40b5b70e46a828420, type: 3}
     - {fileID: 3188265959457166301, guid: deecf510bccc12e40b5b70e46a828420, type: 3}
@@ -1273,6 +1302,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4834138597267130539}
     m_Modifications:
+    - target: {fileID: 68363536509998180, guid: 0dc775eff79cca14cafc68c9d9c89595,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f628a256cac336447ba892f19f0526a4, type: 2}
     - target: {fileID: 2234981109467141569, guid: 0dc775eff79cca14cafc68c9d9c89595,
         type: 3}
       propertyPath: m_Name

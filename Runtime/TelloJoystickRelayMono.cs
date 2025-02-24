@@ -61,4 +61,22 @@ public class TelloJoystickRelayMono : MonoBehaviour
 
 
 
+    public void SetWithDoubleJoysticks(Vector2 left, Vector2 right)
+    {
+        SetVerticalMove(left.y);
+        SetLeftRightRotate(left.x);
+        SetHorizontalMove(right.x);
+        SetFrontalMove(right.y);
+    }
+    public void SetWithDoubleJoysticksLeft(Vector2 left)
+    {
+        SetVerticalMove(left.y);
+        SetLeftRightRotate(left.x);
+    }
+    public void SetWithDoubleJoysticksRight(Vector2 right)
+    {
+        SetHorizontalMove(right.x);
+        SetFrontalMove(right.y);
+    }
+
 }
